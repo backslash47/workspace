@@ -1,0 +1,717 @@
+<?xml version="1.0"?>
+<xs:schema elementFormDefault="qualified" targetNamespace="http://software602.cz/docflow" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xmlns:d="http://software602.cz/docflow" 
+  xmlns:p="http://isds.czechpoint.cz/v20/CreateMultipleMessage" 
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import xsi:schemaLocation="https://www.mojedatovaschranka.cz/static/wsdl/v20/dmBaseTypes.xsd" namespace="http://isds.czechpoint.cz/v20/CreateMultipleMessage"/>
+  <xs:element name="root" nillable="true">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="data" nillable="true">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="odbor" nillable="true" type="d:odbor"/>
+              <xs:element minOccurs="0" name="navrhovatel_prep_fopod_po" type="d:checkbox_1_2"/>
+              <xs:element minOccurs="0" name="navrhovatel_prep_fo_fopod_po" nillable="true" type="d:checkbox_1_3"/>
+              <xs:element minOccurs="0" name="navrhovatel_fo_obch_jmeno" nillable="true" type="d:string_length_150"/>
+              <xs:element minOccurs="0" name="navrhovatel_fo_titulp" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_fo_jmeno" nillable="true" type="d:string_length_24"/>
+              <xs:element minOccurs="0" name="navrhovatel_fo_prijmeni" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_fo_titulz" nillable="true" type="d:string_length_10"/>
+              <xs:element minOccurs="0" name="navrhovatel_fo_rod_prijmeni" nillable="true" type="d:string_length_20"/>
+              <xs:element minOccurs="0" name="navrhovatel_fo_rc" nillable="true" type="d:rodne_cislo"/>
+              <xs:element minOccurs="0" name="navrhovatel_fo_datum_nar" nillable="true" type="d:date"/>
+              <xs:element minOccurs="0" name="navrhovatel_fo_ic" nillable="true" type="d:ico"/>
+              <xs:element minOccurs="0" name="navrhovatel_fo_adrmp_ulice" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="navrhovatel_fo_adrmp_cp" nillable="true" type="d:c_popisne"/>
+              <xs:element minOccurs="0" name="navrhovatel_fo_adrmp_ce" nillable="true" type="d:c_evidencni"/>
+              <xs:element minOccurs="0" name="navrhovatel_fo_adrmp_co" nillable="true" type="d:string_length_04"/>
+              <xs:element minOccurs="0" name="navrhovatel_fo_adrmp_obec" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="navrhovatel_fo_adrmp_castobce" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_fo_adrmp_mcast" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_fo_adrmp_psc" nillable="true" type="d:psc"/>
+              <xs:element minOccurs="0" name="navrhovatel_fo_adrmp_dorp" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_fo_adrmp_dorstat" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_fo_adrpd_ulice" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="navrhovatel_fo_adrpd_ce" nillable="true" type="d:c_evidencni"/>
+              <xs:element minOccurs="0" name="navrhovatel_fo_adrpd_cp" nillable="true" type="d:c_popisne"/>
+              <xs:element minOccurs="0" name="navrhovatel_fo_adrpd_co" nillable="true" type="d:string_length_04"/>
+              <xs:element minOccurs="0" name="navrhovatel_fo_adrpd_obec" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="navrhovatel_fo_adrpd_castobce" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_fo_adrpd_mcast" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_fo_adrpd_psc" nillable="true" type="d:psc"/>
+              <xs:element minOccurs="0" name="navrhovatel_fo_adrpd_dorp" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_fo_adrpd_dorst" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_fo_telefon" nillable="true" type="d:tel_num"/>
+              <xs:element minOccurs="0" name="navrhovatel_fo_email" nillable="true" type="d:string_length_50"/>
+              <xs:element minOccurs="0" name="navrhovatel_fo_ds" nillable="true" type="d:id_ds"/>
+              <xs:element minOccurs="0" name="navrhovatel_po_nazev" nillable="true" type="d:string_length_150"/>
+              <xs:element minOccurs="0" name="navrhovatel_po_ic" nillable="true" type="d:ico"/>
+              <xs:element minOccurs="0" name="navrhovatel_po_sidlo_ulice" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="navrhovatel_po_sidlo_cp" nillable="true" type="d:c_popisne"/>
+              <xs:element minOccurs="0" name="navrhovatel_po_sidlo_ce" nillable="true" type="d:c_evidencni"/>
+              <xs:element minOccurs="0" name="navrhovatel_po_sidlo_co" nillable="true" type="d:string_length_04"/>
+              <xs:element minOccurs="0" name="navrhovatel_po_sidlo_obec" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="navrhovatel_po_sidlo_castobce" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_po_sidlo_mcast" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_po_sidlo_psc" nillable="true" type="d:psc"/>
+              <xs:element minOccurs="0" name="navrhovatel_po_sidlo_dorp" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_po_sidlo_dorstat" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_po_adrpd_ulice" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="navrhovatel_po_adrpd_cp" nillable="true" type="d:c_popisne"/>
+              <xs:element minOccurs="0" name="navrhovatel_po_adrpd_ce" nillable="true" type="d:c_evidencni"/>
+              <xs:element minOccurs="0" name="navrhovatel_po_adrpd_co" nillable="true" type="d:string_length_04"/>
+              <xs:element minOccurs="0" name="navrhovatel_po_adrpd_obec" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="navrhovatel_po_adrpd_castobce" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_po_adrpd_mcast" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_po_adrpd_psc" nillable="true" type="d:psc"/>
+              <xs:element minOccurs="0" name="navrhovatel_po_adrpd_dorp" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_po_adrpd_dorst" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_po_telefon" nillable="true" type="d:tel_num"/>
+              <xs:element minOccurs="0" name="navrhovatel_po_email" nillable="true" type="d:string_length_50"/>
+              <xs:element minOccurs="0" name="navrhovatel_po_ds" nillable="true" type="d:id_ds"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fo_titulp" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fo_jmeno" nillable="true" type="d:string_length_24"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fo_prijmeni" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fo_titulz" nillable="true" type="d:string_length_10"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fo_rod_prijmeni" nillable="true" type="d:string_length_20"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fo_rc" nillable="true" type="d:rodne_cislo"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fo_datum_nar" nillable="true" type="d:date"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fo_adrtb_ulice" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fo_adrtb_cp" nillable="true" type="d:c_popisne"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fo_adrtb_ce" nillable="true" type="d:c_evidencni"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fo_adrtb_co" nillable="true" type="d:string_length_04"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fo_adrtb_obec" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fo_adrtb_castobce" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fo_adrtb_mcast" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fo_adrtb_psc" nillable="true" type="d:psc"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fo_adrtb_dorp" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fo_adrtb_dorstat" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fo_adrpd_ulice" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fo_adrpd_cp" nillable="true" type="d:c_popisne"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fo_adrpd_ce" nillable="true" type="d:c_evidencni"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fo_adrpd_co" nillable="true" type="d:string_length_04"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fo_adrpd_obec" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fo_adrpd_castobce" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fo_adrpd_mcast" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fo_adrpd_psc" nillable="true" type="d:psc"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fo_adrpd_dorp" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fo_adrpd_dorstat" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fo_telefon" nillable="true" type="d:tel_num"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fo_email" nillable="true" type="d:string_length_50"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fo_ds" nillable="true" type="d:id_ds"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fopod_obch_jmeno" nillable="true" type="d:string_length_150"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fopod_titulp" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fopod_jmeno" nillable="true" type="d:string_length_24"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fopod_prijmeni" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fopod_titulz" nillable="true" type="d:string_length_10"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fopod_rod_prijmeni" nillable="true" type="d:string_length_20"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fopod_rc" nillable="true" type="d:rodne_cislo"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fopod_datum_nar" nillable="true" type="d:date"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fopod_adrmp_ulice" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fopod_adrmp_cp" nillable="true" type="d:c_popisne"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fopod_adrmp_ce" nillable="true" type="d:c_evidencni"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fopod_adrmp_co" nillable="true" type="d:string_length_04"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fopod_adrmp_obec" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fopod_adrmp_castobce" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fopod_adrmp_mcast" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fopod_adrmp_psc" nillable="true" type="d:psc"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fopod_adrmp_dorp" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fopod_adrmp_dorstat" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fopod_adrpd_ulice" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fopod_adrpd_cp" nillable="true" type="d:c_popisne"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fopod_adrpd_ce" nillable="true" type="d:c_evidencni"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fopod_adrpd_co" nillable="true" type="d:string_length_04"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fopod_adrpd_obec" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fopod_adrpd_castobce" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fopod_adrpd_mcast" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fopod_adrpd_psc" nillable="true" type="d:psc"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fopod_adrpd_dorp" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fopod_adrpd_dorstat" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fopod_telefon" nillable="true" type="d:tel_num"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fopod_email" nillable="true" type="d:string_length_50"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fopod_ds" nillable="true" type="d:id_ds"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_po_nazev" nillable="true" type="d:string_length_150"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_po_ic" nillable="true" type="d:ico"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_po_sidlo_ulice" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_po_sidlo_cp" nillable="true" type="d:c_popisne"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_po_sidlo_ce" nillable="true" type="d:c_evidencni"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_po_sidlo_co" nillable="true" type="d:string_length_04"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_po_sidlo_obec" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_po_sidlo_castobce" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_po_sidlo_mcast" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_po_sidlo_psc" nillable="true" type="d:psc"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_po_sidlo_dorp" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_po_sidlo_dorstat" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_po_adrpd_ulice" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_po_adrpd_cp" nillable="true" type="d:c_popisne"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_po_adrpd_ce" nillable="true" type="d:c_evidencni"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_po_adrpd_co" nillable="true" type="d:string_length_04"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_po_adrpd_obec" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_po_adrpd_castobce" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_po_adrpd_mcast" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_po_adrpd_psc" nillable="true" type="d:psc"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_po_adrpd_dorp" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_po_adrpd_dorstat" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_po_telefon" nillable="true" type="d:tel_num"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_po_email" nillable="true" type="d:string_length_50"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_po_ds" nillable="true" type="d:id_ds"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fo_titulp" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fo_jmeno" nillable="true" type="d:string_length_24"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fo_prijmeni" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fo_titulz" nillable="true" type="d:string_length_10"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fo_rod_prijmeni" nillable="true" type="d:string_length_20"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fo_rc" nillable="true" type="d:rodne_cislo"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fo_datum_nar" nillable="true" type="d:date"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fo_adrtb_ulice" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fo_adrtb_cp" nillable="true" type="d:c_popisne"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fo_adrtb_ce" nillable="true" type="d:c_evidencni"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fo_adrtb_co" nillable="true" type="d:string_length_04"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fo_adrtb_obec" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fo_adrtb_castobce" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fo_adrtb_mcast" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fo_adrtb_psc" nillable="true" type="d:psc"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fo_adrtb_dorp" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fo_adrtb_dorstat" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fo_adrpd_ulice" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fo_adrpd_cp" nillable="true" type="d:c_popisne"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fo_adrpd_ce" nillable="true" type="d:c_evidencni"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fo_adrpd_co" nillable="true" type="d:string_length_04"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fo_adrpd_obec" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fo_adrpd_castobce" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fo_adrpd_mcast" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fo_adrpd_psc" nillable="true" type="d:psc"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fo_adrpd_dorp" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fo_adrpd_dorstat" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fo_telefon" nillable="true" type="d:tel_num"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fo_email" nillable="true" type="d:string_length_50"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fo_ds" nillable="true" type="d:id_ds"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fopod_obch_jmeno" nillable="true" type="d:string_length_150"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fopod_titulp" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fopod_jmeno" nillable="true" type="d:string_length_24"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fopod_prijmeni" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fopod_titulz" nillable="true" type="d:string_length_10"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fopod_rod_prijmeni" nillable="true" type="d:string_length_20"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fopod_rc" nillable="true" type="d:rodne_cislo"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fopod_datum_nar" nillable="true" type="d:date"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fopod_adrmp_ulice" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fopod_adrmp_cp" nillable="true" type="d:c_popisne"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fopod_adrmp_ce" nillable="true" type="d:c_evidencni"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fopod_adrmp_co" nillable="true" type="d:string_length_04"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fopod_adrmp_obec" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fopod_adrmp_castobce" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fopod_adrmp_mcast" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fopod_adrmp_psc" nillable="true" type="d:psc"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fopod_adrmp_dorp" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fopod_adrmp_dorstat" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fopod_adrpd_ulice" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fopod_adrpd_cp" nillable="true" type="d:c_popisne"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fopod_adrpd_ce" nillable="true" type="d:c_evidencni"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fopod_adrpd_co" nillable="true" type="d:string_length_04"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fopod_adrpd_obec" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fopod_adrpd_castobce" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fopod_adrpd_mcast" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fopod_adrpd_psc" nillable="true" type="d:psc"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fopod_adrpd_dorp" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fopod_adrpd_dorstat" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fopod_telefon" nillable="true" type="d:tel_num"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fopod_email" nillable="true" type="d:string_length_50"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fopod_ds" nillable="true" type="d:id_ds"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_po_nazev" nillable="true" type="d:string_length_150"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_po_ic" nillable="true" type="d:ico"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_po_sidlo_ulice" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_po_sidlo_cp" nillable="true" type="d:c_popisne"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_po_sidlo_ce" nillable="true" type="d:c_evidencni"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_po_sidlo_co" nillable="true" type="d:string_length_04"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_po_sidlo_obec" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_po_sidlo_castobce" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_po_sidlo_mcast" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_po_sidlo_psc" nillable="true" type="d:psc"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_po_sidlo_dorp" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_po_sidlo_dorstat" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_po_adrpd_ulice" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_po_adrpd_cp" nillable="true" type="d:c_popisne"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_po_adrpd_ce" nillable="true" type="d:c_evidencni"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_po_adrpd_co" nillable="true" type="d:string_length_04"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_po_adrpd_obec" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_po_adrpd_castobce" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_po_adrpd_mcast" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_po_adrpd_psc" nillable="true" type="d:psc"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_po_adrpd_dorp" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_po_adrpd_dorstat" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_po_telefon" nillable="true" type="d:tel_num"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_po_email" nillable="true" type="d:string_length_50"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_po_ds" nillable="true" type="d:id_ds"/>
+              <xs:element minOccurs="0" name="odpurce_prep_fo_fopod_po" nillable="true" type="d:checkbox_1_3"/>
+              <xs:element minOccurs="0" name="odpurce_fo_titulp" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="odpurce_fo_jmeno" nillable="true" type="d:string_length_24"/>
+              <xs:element minOccurs="0" name="odpurce_fo_prijmeni" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="odpurce_fo_titulz" nillable="true" type="d:string_length_10"/>
+              <xs:element minOccurs="0" name="odpurce_fo_rod_prijmeni" nillable="true" type="d:string_length_20"/>
+              <xs:element minOccurs="0" name="odpurce_fo_rc" nillable="true" type="d:rodne_cislo"/>
+              <xs:element minOccurs="0" name="odpurce_fo_datum_nar" nillable="true" type="d:date"/>
+              <xs:element minOccurs="0" name="odpurce_fo_adrtb_ulice" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="odpurce_fo_adrtb_cp" nillable="true" type="d:c_popisne"/>
+              <xs:element minOccurs="0" name="odpurce_fo_adrtb_ce" nillable="true" type="d:c_evidencni"/>
+              <xs:element minOccurs="0" name="odpurce_fo_adrtb_co" nillable="true" type="d:string_length_04"/>
+              <xs:element minOccurs="0" name="odpurce_fo_adrtb_obec" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="odpurce_fo_adrtb_castobce" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="odpurce_fo_adrtb_mcast" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="odpurce_fo_adrtb_psc" nillable="true" type="d:psc"/>
+              <xs:element minOccurs="0" name="odpurce_fo_adrtb_dorp" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="odpurce_fo_adrtb_dorstat" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="odpurce_fo_adrpd_ulice" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="odpurce_fo_adrpd_cp" nillable="true" type="d:c_popisne"/>
+              <xs:element minOccurs="0" name="odpurce_fo_adrpd_ce" nillable="true" type="d:c_evidencni"/>
+              <xs:element minOccurs="0" name="odpurce_fo_adrpd_co" nillable="true" type="d:string_length_04"/>
+              <xs:element minOccurs="0" name="odpurce_fo_adrpd_obec" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="odpurce_fo_adrpd_castobce" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="odpurce_fo_adrpd_mcast" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="odpurce_fo_adrpd_psc" nillable="true" type="d:psc"/>
+              <xs:element minOccurs="0" name="odpurce_fo_adrpd_dorp" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="odpurce_fo_adrpd_dorstat" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="odpurce_fo_telefon" nillable="true" type="d:tel_num"/>
+              <xs:element minOccurs="0" name="odpurce_fo_email" nillable="true" type="d:string_length_50"/>
+              <xs:element minOccurs="0" name="odpurce_fo_ds" nillable="true" type="d:id_ds"/>
+              <xs:element minOccurs="0" name="odpurce_fopod_obch_jmeno" nillable="true" type="d:string_length_150"/>
+              <xs:element minOccurs="0" name="odpurce_fopod_titulp" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="odpurce_fopod_jmeno" nillable="true" type="d:string_length_24"/>
+              <xs:element minOccurs="0" name="odpurce_fopod_prijmeni" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="odpurce_fopod_titulz" nillable="true" type="d:string_length_10"/>
+              <xs:element minOccurs="0" name="odpurce_fopod_rod_prijmeni" nillable="true" type="d:string_length_20"/>
+              <xs:element minOccurs="0" name="odpurce_fopod_rc" nillable="true" type="d:rodne_cislo"/>
+              <xs:element minOccurs="0" name="odpurce_fopod_datum_nar" nillable="true" type="d:date"/>
+              <xs:element minOccurs="0" name="odpurce_fopod_adrmp_ulice" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="odpurce_fopod_adrmp_cp" nillable="true" type="d:c_popisne"/>
+              <xs:element minOccurs="0" name="odpurce_fopod_adrmp_ce" nillable="true" type="d:c_evidencni"/>
+              <xs:element minOccurs="0" name="odpurce_fopod_adrmp_co" nillable="true" type="d:string_length_04"/>
+              <xs:element minOccurs="0" name="odpurce_fopod_adrmp_obec" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="odpurce_fopod_adrmp_castobce" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="odpurce_fopod_adrmp_mcast" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="odpurce_fopod_adrmp_psc" nillable="true" type="d:psc"/>
+              <xs:element minOccurs="0" name="odpurce_fopod_adrmp_dorp" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="odpurce_fopod_adrmp_dorstat" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="odpurce_fopod_adrpd_ulice" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="odpurce_fopod_adrpd_cp" nillable="true" type="d:c_popisne"/>
+              <xs:element minOccurs="0" name="odpurce_fopod_adrpd_ce" nillable="true" type="d:c_evidencni"/>
+              <xs:element minOccurs="0" name="odpurce_fopod_adrpd_co" nillable="true" type="d:string_length_04"/>
+              <xs:element minOccurs="0" name="odpurce_fopod_adrpd_obec" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="odpurce_fopod_adrpd_castobce" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="odpurce_fopod_adrpd_mcast" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="odpurce_fopod_adrpd_psc" nillable="true" type="d:psc"/>
+              <xs:element minOccurs="0" name="odpurce_fopod_adrpd_dorp" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="odpurce_fopod_adrpd_dorstat" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="odpurce_fopod_telefon" nillable="true" type="d:tel_num"/>
+              <xs:element minOccurs="0" name="odpurce_fopod_email" nillable="true" type="d:string_length_50"/>
+              <xs:element minOccurs="0" name="odpurce_fopod_ds" nillable="true" type="d:id_ds"/>
+              <xs:element minOccurs="0" name="odpurce_po_nazev" nillable="true" type="d:string_length_150"/>
+              <xs:element minOccurs="0" name="odpurce_po_ic" nillable="true" type="d:ico"/>
+              <xs:element minOccurs="0" name="odpurce_po_sidlo_ulice" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="odpurce_po_sidlo_cp" nillable="true" type="d:c_popisne"/>
+              <xs:element minOccurs="0" name="odpurce_po_sidlo_ce" nillable="true" type="d:c_evidencni"/>
+              <xs:element minOccurs="0" name="odpurce_po_sidlo_co" nillable="true" type="d:string_length_04"/>
+              <xs:element minOccurs="0" name="odpurce_po_sidlo_obec" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="odpurce_po_sidlo_castobce" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="odpurce_po_sidlo_mcast" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="odpurce_po_sidlo_psc" nillable="true" type="d:psc"/>
+              <xs:element minOccurs="0" name="odpurce_po_sidlo_dorp" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="odpurce_po_sidlo_dorstat" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="odpurce_po_adrpd_ulice" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="odpurce_po_adrpd_cp" nillable="true" type="d:c_popisne"/>
+              <xs:element minOccurs="0" name="odpurce_po_adrpd_ce" nillable="true" type="d:c_evidencni"/>
+              <xs:element minOccurs="0" name="odpurce_po_adrpd_co" nillable="true" type="d:string_length_04"/>
+              <xs:element minOccurs="0" name="odpurce_po_adrpd_obec" nillable="true" type="d:string_length_48"/>
+              <xs:element minOccurs="0" name="odpurce_po_adrpd_castobce" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="odpurce_po_adrpd_mcast" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="odpurce_po_adrpd_psc" nillable="true" type="d:psc"/>
+              <xs:element minOccurs="0" name="odpurce_po_adrpd_dorp" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="odpurce_po_adrpd_dorstat" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="odpurce_po_telefon" nillable="true" type="d:tel_num"/>
+              <xs:element minOccurs="0" name="odpurce_po_email" nillable="true" type="d:string_length_50"/>
+              <xs:element minOccurs="0" name="odpurce_po_ds" nillable="true" type="d:id_ds"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fopod_ic" nillable="true" type="d:ico"/>
+              <xs:element minOccurs="0" name="odpurce_fopod_ic" nillable="true" type="d:ico"/>
+              <xs:element minOccurs="0" name="predmet_group" nillable="true">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="predmet_items" nillable="true">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="predmet_pohledavka_checkbox" nillable="true" type="d:checkbox_0_1"/>
+                          <xs:element minOccurs="0" name="predmet_smluvni_pokuta_checkbox" nillable="true" type="d:checkbox_0_1"/>
+                          <xs:element minOccurs="0" name="predmet_cislo_group" nillable="true">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element maxOccurs="20" minOccurs="0" name="predmet_cislo_items" nillable="true">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element minOccurs="0" maxOccurs="20" name="predmet_cislo" type="d:string_length_30"/>
+                                      <xs:element minOccurs="0" name="predmet_cislo_checkbox" nillable="true" type="d:integer"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="predmet_pohledavka_group" nillable="true">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element maxOccurs="unbounded" minOccurs="0" name="predmet_pohledavka_items" nillable="true">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element minOccurs="0" maxOccurs="12" name="predmet_pohledavka_castka" nillable="true" type="d:float"/>
+                                      <xs:element minOccurs="0" name="predmet_pohledavka_od" nillable="true" type="d:date_1900"/>
+                                      <xs:element minOccurs="0" name="predmet_pohledavka_do" nillable="true" type="d:date_1900"/>
+                                      <xs:element minOccurs="0" name="predmet_pohledavka_prislusenstvi_group" nillable="true">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element maxOccurs="unbounded" minOccurs="0" name="predmet_pohledavka_prislusenstvi_items" nillable="true">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element minOccurs="0" name="predmet_pohledavka_prislusenstvi_od" nillable="true" type="d:date_1900"/>
+                                                  <xs:element minOccurs="0" name="predmet_pohledavka_prislusenstvi_do_checkbox" nillable="true" type="d:checkbox_0_1"/>
+                                                  <xs:element minOccurs="0" name="predmet_pohledavka_prislusenstvi_do" nillable="true" type="d:date_1900"/>
+                                                  <xs:element minOccurs="0" maxOccurs="12" name="predmet_pohledavka_prislusenstvi_ve_vysi" nillable="true" type="xs:string"/>
+                                                  <xs:element minOccurs="0" name="predmet_pohledavka_prislusenstvi_interval" nillable="true" type="d:checkbox_1_4"/>
+                                                  <xs:element minOccurs="0" name="predmet_pohledavka_prislusenstvi_last" nillable="true" type="d:checkbox_0_1"/>
+                                                  <xs:element minOccurs="0" name="predmet_pohledavka_prislusenstvi_narizeni" nillable="true" type="d:checkbox_0_1"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element minOccurs="0" name="predmet_pohledavka_prislusenstvi_checkbox" nillable="true" type="d:checkbox_0_2"/>
+                                      <xs:element minOccurs="0" name="ppp" nillable="true" type="xs:string"/>
+                                      <xs:element minOccurs="0" name="predmet_pohledavka_splatnost" nillable="true" type="d:date"/>
+                                      <xs:element minOccurs="0" name="poc_opak_pohledavka_prislusenstvi" nillable="true" type="d:checkbox_0_1"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="predmet_pohledavka_celkem" nillable="true" type="d:float"/>
+                          <xs:element minOccurs="0" name="predmet_smluvni_pokuta_celkem" nillable="true" type="d:float"/>
+                          <xs:element minOccurs="0" name="predmet_smluvni_pokuta_pev_prom" nillable="true" type="d:checkbox_1_2"/>
+                          <xs:element minOccurs="0" name="predmet_smluvni_pokuta_pev_group" nillable="true">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element maxOccurs="unbounded" minOccurs="0" name="predmet_smluvni_pokuta_pev_items" nillable="true">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element minOccurs="0" maxOccurs="5" name="predmet_smluvni_pokuta_pev_castka" nillable="true" type="d:float"/>
+                                      <xs:element minOccurs="0" name="predmet_smluvni_pokuta_pev_prislusenstvi_group" nillable="true">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element maxOccurs="unbounded" minOccurs="0" name="predmet_smluvni_pokuta_pev_prislusenstvi_items" nillable="true">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element minOccurs="0" name="predmet_smluvni_pokuta_pev_prislusenstvi_od" nillable="true" type="d:date_1900"/>
+                                                  <xs:element minOccurs="0" name="predmet_smluvni_pokuta_pev_prislusenstvi_do_checkbox" nillable="true" type="d:checkbox_0_1"/>
+                                                  <xs:element minOccurs="0" name="predmet_smluvni_pokuta_pev_prislusenstvi_do" nillable="true" type="d:date_1900"/>
+                                                  <xs:element minOccurs="0" maxOccurs="12" name="predmet_smluvni_pokuta_pev_prislusenstvi_ve_vysi" nillable="true" type="xs:string"/>
+                                                  <xs:element minOccurs="0" name="predmet_smluvni_pokuta_pev_prislusenstvi_interval" nillable="true" type="d:checkbox_1_4"/>
+                                                  <xs:element minOccurs="0" name="predmet_smluvni_pokuta_pev_prislusenstvi_last" nillable="true" type="d:checkbox_0_1"/>
+                                                  <xs:element minOccurs="0" name="predmet_smluvni_pokuta_pev_prislusenstvi_narizeni" nillable="true" type="d:checkbox_0_1"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element minOccurs="0" name="predmet_smluvni_pokuta_prislusenstvi_zu_su" nillable="true" type="d:checkbox_0_2"/>
+                                      <xs:element minOccurs="0" name="sss" nillable="true" type="xs:string"/>
+                                      <xs:element minOccurs="0" name="predmet_smluvni_pokuta_pev_splatnost" nillable="true" type="d:date_1900"/>
+                                      <xs:element minOccurs="0" name="poc_opak_smluvni_pokuta_pev_prislusenstvi" nillable="true" type="d:checkbox_0_1"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" name="predmet_smluvni_pokuta_promenna_sazba" nillable="true" type="d:string_length_1000"/>
+                          <xs:element minOccurs="0" name="poc_opak_cislo" nillable="true" type="d:checkbox_0_1"/>
+                          <xs:element minOccurs="0" name="poc_opak_pohledavka" nillable="true" type="d:checkbox_0_1"/>
+                          <xs:element minOccurs="0" name="poc_opak_smluvni_pokuta_pev" nillable="true" type="d:checkbox_0_1"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="oznaceni_dukazu" nillable="true" type="d:string_length_1000"/>
+              <xs:element minOccurs="0" name="naklady_sp_checkbox" nillable="true" type="d:checkbox_0_1"/>
+              <xs:element minOccurs="0" name="naklady_odmeny_checkbox" nillable="true" type="d:checkbox_0_1"/>
+              <xs:element minOccurs="0" name="naklady_odmeny_castka" nillable="true" type="d:checkbox_0_1"/>
+              <xs:element minOccurs="0" name="naklady_odmeny_castka_dph" nillable="true" type="d:float"/>
+              <xs:element minOccurs="0" name="bank_udaje_dluh_predcisli" nillable="true" type="d:string_length_06_num_only"/>
+              <xs:element minOccurs="0" name="bank_udaje_dluh_cu" nillable="true" type="d:string_length_10_num_only"/>
+              <xs:element minOccurs="0" name="bank_udaje_dluh_kod_banky" nillable="true" type="d:string_length_04_num_only"/>
+              <xs:element minOccurs="0" name="bank_udaje_iban_checkbox" nillable="true" type="d:checkbox_0_1"/>
+              <xs:element minOccurs="0" name="bank_udaje_iban1" nillable="true" type="d:string_length_04"/>
+              <xs:element minOccurs="0" name="bank_udaje_iban2" nillable="true" type="d:string_length_04"/>
+              <xs:element minOccurs="0" name="bank_udaje_iban3" nillable="true" type="d:string_length_04"/>
+              <xs:element minOccurs="0" name="bank_udaje_iban4" nillable="true" type="d:string_length_04"/>
+              <xs:element minOccurs="0" name="bank_udaje_iban5" nillable="true" type="d:string_length_04"/>
+              <xs:element minOccurs="0" name="bank_udaje_iban6" nillable="true" type="d:string_length_04"/>
+              <xs:element minOccurs="0" name="bank_udaje_iban_bic" nillable="true" type="d:string_length_11"/>
+              <xs:element minOccurs="0" name="bank_udaje_dluh_vs" nillable="true" type="d:string_length_10_num_only"/>
+              <xs:element minOccurs="0" name="bank_udaje_naklady_cu" nillable="true" type="d:string_length_10"/>
+              <xs:element minOccurs="0" name="bank_udaje_naklady_vs" nillable="true" type="d:string_length_10_num_only"/>
+              <xs:element minOccurs="0" name="vyrok_rozhodnuti" nillable="true" type="d:string_length_2000"/>
+              <xs:element minOccurs="0" name="poznamka" nillable="true" type="d:string_length_1000"/>
+              <xs:element minOccurs="0" name="prilohy_group" nillable="true">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="prilohy_items" nillable="true">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="prilohy_popis" nillable="true" type="xs:string"/>
+                          <xs:element minOccurs="0" name="prilohy_priloha" nillable="true" type="xs:base64Binary"/>
+                          <xs:element minOccurs="0" name="prilohy_typ" nillable="true" type="xs:string"/>
+                          <xs:element minOccurs="0" name="prilohy_velikost" nillable="true" type="xs:float"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="mail" nillable="true" type="xs:string"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_rzn" nillable="true" type="d:checkbox_1_4"/>
+              <xs:element name="isds" type="xs:anyType"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fopod_ic" nillable="true" type="d:ico"/>
+              <xs:element minOccurs="0" name="bank_udaje_pocet_dnu" nillable="true" type="d:integer"/>
+              <xs:element minOccurs="0" name="skutecnosti_pohledavku_postoupil" nillable="true" type="d:string_length_100"/>
+              <xs:element minOccurs="0" name="skutecnosti_poskytovatel_sluzeb" nillable="true" type="d:string_length_100"/>
+              <xs:element minOccurs="0" name="skutecnosti_pravni_skutecnosti" nillable="true" type="d:string_length_10000"/>
+              <xs:element minOccurs="0" name="naklady_spravni_poplatek_castka_dph" nillable="true" type="d:float"/>
+              <xs:element minOccurs="0" name="navrhovatel_prep_fo_fopod_po2" nillable="true" type="d:checkbox_1_3"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_rzn2" nillable="true" type="d:checkbox_1_4"/>
+              <xs:element minOccurs="0" name="pom_sp" nillable="true" type="xs:string"/>
+              <xs:element minOccurs="0" name="bank_udaje_naklady_predcisli" nillable="true" type="d:string_length_06_num_only"/>
+              <xs:element minOccurs="0" name="bank_udaje_naklady_kod_banky" nillable="true" type="d:string_length_04_num_only"/>
+              <xs:element minOccurs="0" name="cislo_jednaci_znacka" nillable="true" type="d:string_length_30"/>
+              <xs:element minOccurs="0" name="cislo_jednaci_datum" nillable="true" type="d:date_1900"/>
+              <xs:element minOccurs="0" name="bank_udaje_dluh_ss" nillable="true" type="xs:string"/>
+              <xs:element minOccurs="0" name="bank_udaje_naklady_ss" nillable="true" type="xs:string"/>
+              <xs:element minOccurs="0" name="celk_dluzna_castka" nillable="true" type="d:float"/>
+              <xs:element minOccurs="0" name="vyrok_rozhodnuti_rucne" nillable="true" type="d:checkbox_0_1"/>
+              <xs:element minOccurs="0" name="navrhovatel_fo_ic_chb" nillable="true" type="d:checkbox_0_1"/>
+              <xs:element minOccurs="0" name="navrhovatel_fo_ic_zahr" nillable="true" type="d:string_length_20"/>
+              <xs:element minOccurs="0" name="navrhovatel_po_ic_chb" nillable="true" type="d:checkbox_0_1"/>
+              <xs:element minOccurs="0" name="navrhovatel_po_ic_zahr" nillable="true" type="d:string_length_20"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fopod_ic_chb" nillable="true" type="d:checkbox_0_1"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_fopod_ic_zahr" nillable="true" type="d:string_length_20"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_po_ic_chb" nillable="true" type="d:checkbox_0_1"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast_po_ic_zahr" nillable="true" type="d:string_length_20"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fopod_ic_chb" nillable="true" type="d:checkbox_0_1"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_fopod_ic_zahr" nillable="true" type="d:string_length_20"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_po_ic_chb" nillable="true" type="d:checkbox_0_1"/>
+              <xs:element minOccurs="0" name="navrhovatel_zast2_po_ic_zahr" nillable="true" type="d:string_length_20"/>
+              <xs:element minOccurs="0" name="odpurce_fopod_ic_chb" nillable="true" type="d:checkbox_0_1"/>
+              <xs:element minOccurs="0" name="odpurce_fopod_ic_zahr" nillable="true" type="d:string_length_20"/>
+              <xs:element minOccurs="0" name="odpurce_po_ic_chb" nillable="true" type="d:checkbox_0_1"/>
+              <xs:element minOccurs="0" name="odpurce_po_ic_zahr" nillable="true" type="d:string_length_20"/>
+              <xs:element minOccurs="0" name="poc_opak_predmet" nillable="true" type="d:checkbox_0_1"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="pomocne" nillable="true">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="pom_spravni_poplatek" nillable="true" type="xs:string"/>
+              <xs:element minOccurs="0" name="ds_odeslano" nillable="true" type="xs:string"/>
+              <xs:element minOccurs="0" name="pom_celk_castka_orezane" nillable="true" type="xs:string"/>
+              <xs:element minOccurs="0" name="celk_velikost" nillable="true" type="xs:string"/>
+              <xs:element minOccurs="0" name="velikost_vetsi" nillable="true" type="xs:string"/>
+              <xs:element minOccurs="0" name="pom_extension" nillable="true" type="xs:string"/>
+              <xs:element minOccurs="0" name="current_date" nillable="true" type="xs:string"/>
+              <xs:element minOccurs="0" name="pocet_podpisu" nillable="true" type="xs:string"/>
+              <xs:element minOccurs="0" name="tlacitka" nillable="true" type="xs:string"/>
+              <xs:element minOccurs="0" name="subject" nillable="true" type="xs:string"/>
+              <xs:element minOccurs="0" name="id_ds" nillable="true" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="checkbox_0_1">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[ ]*|[0-1]"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="checkbox_0_2">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[ ]*|[0-2]"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="checkbox_1_2">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[ ]*|[1-2]"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="checkbox_1_3">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[ ]*|[1-3]"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="checkbox_1_4">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[ ]*|[1-4]"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ico">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[ ]*|[0-9]{1,8}"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="id_ds">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[ ]*|[a-zA-Z0-9]{7}"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="psc">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[ ]*|[0-9]{1,5}"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="c_evidencni">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[ ]*|[0-9]{1,5}"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="c_popisne">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[ ]*|[0-9]{1,4}"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="rodne_cislo">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[ ]*|[0-9]{9,10}"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="tel_num">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[ ]*|[+]{0,1}[0-9][0-9]*"/>
+      <xs:maxLength value="15"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="date">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[ ]*|[1-2][0-9]{3}[\-]([0][1-9]|[1][0-2])[\-]([0][1-9]|[1-2][0-9]|[3][0-1])"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="date_1900">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[ ]*|[1][9]{3}[\-]([0][1-9]|[1][0-2])[\-]([0][1-9]|[1-2][0-9]|[3][0-1])|[2][0-9]{3}[\-]([0][1-9]|[1][0-2])[\-]([0][1-9]|[1-2][0-9]|[3][0-1])"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="string_length_04">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="4"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="string_length_04_num_only">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[ ]*|[0-9]*"/>
+      <xs:maxLength value="4"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="string_length_06_num_only">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[ ]*|[0-9]*"/>
+      <xs:maxLength value="6"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="string_length_10">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="10"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="string_length_10_num_only">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[ ]*|[0-9]*"/>
+      <xs:maxLength value="10"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="string_length_11">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="11"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="string_length_20">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="20"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="string_length_24">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="24"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="string_length_30">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="30"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="string_length_48">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="48"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="string_length_50">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="50"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="string_length_100">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="100"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="string_length_150">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="150"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="string_length_1000">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="1000"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="string_length_2000">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="2000"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="string_length_10000">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="10000"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="float">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[ ]*|[0-9]+[\.]?[0-9]*"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="integer">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[ ]*|[0-9]+"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="odbor">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="podatelna@ctu.cz"/>
+      <xs:enumeration value="podatelna.praha@ctu.cz"/>
+      <xs:enumeration value="podatelna.ceske.budejovice@ctu.cz"/>
+      <xs:enumeration value="podatelna.plzen@ctu.cz"/>
+      <xs:enumeration value="podatelna.usti.nad.labem@ctu.cz"/>
+      <xs:enumeration value="podatelna.hradec.kralove@ctu.cz"/>
+      <xs:enumeration value="podatelna.brno@ctu.cz"/>
+      <xs:enumeration value="podatelna.ostrava@ctu.cz"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
